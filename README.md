@@ -1,0 +1,1 @@
+I used one core of the ESP32 for sensor data collection and the other for Bluetooth data transfer, with a mutex to prevent conflicts. This was part of our initial mocap prototype using I2C. Later, we switched to SPI and planned to use both SPI buses (VSPI for upper body and HSPI for lower) on separate cores for better performance, but didn’t get around to implementing it.
